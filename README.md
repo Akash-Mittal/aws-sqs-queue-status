@@ -139,7 +139,7 @@ The project includes a `.git` folder with the commit history.
 
 ## Author
 
-[Your Name]
+Akash Mittal - akash@mittal.blog
 
 ## License
 
