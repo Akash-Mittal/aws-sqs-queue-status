@@ -10,11 +10,7 @@ This Python script uses the `boto3` library to fetch and display the current num
 
 The script is named `sqs_queues.py` and contains the core function `get_queues_message_totals(queues: List)`.  It's designed to be used both directly from the command line and imported as a module.
 
-## Installation
 
-```bash
-pip install boto3  # Ensure you have boto3 installed (version 1.16+ recommended)
-```
 
 ## Usage
 
@@ -23,16 +19,8 @@ pip install boto3  # Ensure you have boto3 installed (version 1.16+ recommended)
 ```bash
 python sqs_queues.py queue-1 queue-2 queue-3 ...
 ```
-
 Where `queue-1`, `queue-2`, `queue-3`, etc., are the names of your SQS queues.
 
-**Example:**
-
-```bash
-python sqs_queues.py my-queue-1 my-queue-2
-```
-
-### Import
 
 ```python
 from sqs_queues import get_queues_message_totals
@@ -145,5 +133,3 @@ Akash Mittal - akash@mittal.blog
 
 [Your License (e.g., MIT)]
 ```
-
-This is the content for a *single* `README.md` file.  Just copy and paste this into a file named `README.md` in the root directory of your project.  Remember to replace `[Your Name]` and `[Your License]` with your actual information.
