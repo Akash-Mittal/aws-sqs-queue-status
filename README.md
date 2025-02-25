@@ -1,10 +1,12 @@
+# aws-sqs-queue-status
+Python project with boto3 library to fetch and display the current number of items in one or more SQS queues and their dead letter queues.
+
 # Assumptions and Current Status
 - The test cases are yet to be mocked.
+- Some scenarios that needs handling - When 2 Valid Q  and 1 Invalid, Q without DLQ and other edge cases 
 - To run the python script please use run.sh
 - AWS Default profile is picked up - TD - externalize the env. variable as per enironment.
 
-# aws-sqs-queue-status
-Python project with boto3 library to fetch and display the current number of items in one or more SQS queues and their dead letter queues.
 
 ```markdown
 # SQS Queue Message Counter
@@ -15,12 +17,9 @@ This Python script uses the `boto3` library to fetch and display the current num
 
 The script is named `sqs_queues.py` and contains the core function `get_queues_message_totals(queues: List)`.  It's designed to be used both directly from the command line and imported as a module.
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 1004da629ddda9f751ac575e7ab72895c9f9b098
-
 ## Usage
+
+run.sh
 
 ### Command Line
 
@@ -28,19 +27,6 @@ The script is named `sqs_queues.py` and contains the core function `get_queues_m
 python sqs_queues.py queue-1 queue-2 queue-3 ...
 ```
 Where `queue-1`, `queue-2`, `queue-3`, etc., are the names of your SQS queues.
-
-<<<<<<< HEAD
-=======
-
-```python
-from sqs_queues import get_queues_message_totals
-
-queue_names = ["my-queue-1", "my-queue-2"]
-message_counts = get_queues_message_totals(queue_names)
-print(message_counts) # Or process the returned data as needed
-```
->>>>>>> 1004da629ddda9f751ac575e7ab72895c9f9b098
-
 ## Output
 
 ### Command Line
