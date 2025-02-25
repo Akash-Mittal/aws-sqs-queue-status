@@ -6,6 +6,7 @@ Python project with boto3 library to fetch and display the current number of ite
 - Some scenarios that needs handling - When 2 Valid Q  and 1 Invalid, Q without DLQ and other edge cases 
 - To run the python script please use run.sh
 - AWS Default profile is picked up - TD - externalize the env. variable as per enironment.
+- This file is generated via AI then - manually updated. 
 
 
 ```markdown
@@ -88,45 +89,15 @@ pip install -e .
 
 ## Testing
 
-The `moto` library can be used for testing. Install it using:
+The `moto` library can be used for testing. 
 
 ```bash
-pip install moto
+```
+python -m unittest test.test_sqs_queues
 ```
 
-You can then run the tests (if included in the project) using a testing framework like `pytest`:
 
-```bash
-pip install pytest
-pytest
-```
-
-## Python Version
-
-The module is compatible with Python 3.8 and later.
-
-## Dependencies
-
-* `boto3` (version 1.16+ recommended)
-
-## File Structure
-
-```
-sqs_queues/
-├── sqs_queues.py  # The main script
-├── __init__.py  # Makes sqs_queues a package
-└── README.md      # This file
-```
-
-## Git History
-
-The project includes a `.git` folder with the commit history.
 
 ## Author
-
 Akash Mittal - akash@mittal.blog
-
-## License
-
-[Your License (e.g., MIT)]
 ```
